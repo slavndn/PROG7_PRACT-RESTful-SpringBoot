@@ -13,27 +13,6 @@ RESTful веб-приложение для управления библиоте
 - **Spring Validation** - для валидации данных
 - **Maven** - система сборки
 
-## Структура проекта
-
-```
-src/
-├── main/
-│   ├── java/ru/university/restful/
-│   │   ├── RestfulApplication.java          # Главный класс приложения
-│   │   ├── controller/
-│   │   │   ├── BookController.java          # REST контроллер
-│   │   │   └── GlobalExceptionHandler.java  # Обработчик исключений
-│   │   ├── model/
-│   │   │   └── Book.java                    # Entity класс
-│   │   ├── repository/
-│   │   │   └── BookRepository.java          # Repository интерфейс
-│   │   └── service/
-│   │       └── BookService.java            # Service класс
-│   └── resources/
-│       └── application.properties           # Конфигурация приложения
-└── pom.xml                                   # Maven конфигурация
-```
-
 ## Запуск приложения
 
 ### Требования
@@ -149,8 +128,4 @@ curl -X PUT http://localhost:8080/api/books/1 \
 ```bash
 curl -X DELETE http://localhost:8080/api/books/1
 ```
-
-## Автор
-
-Практическая работа по курсу программирования
 
